@@ -1,0 +1,21 @@
+{
+  "name": "oiplay",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "paulo10.1977@yahoo.com.br <paulo10.1977@yahoo.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/paulo101977/oiplay",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}

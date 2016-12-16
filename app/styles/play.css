@@ -90,12 +90,29 @@ body{
 .password-input{
     position: absolute;
     margin-top: 167px;
+    margin-left: 31px;
+    padding: 0;
+    font-weight: 100;
+}
+
+.data-invalid-text{
+    position: absolute;
+    margin-top: 235px;
+    font-family: "SimplonBP-Light";
+    font-size: 14px;
+    color: white;
     margin-left:  31px;
     padding: 0;
     font-weight: 100;
 }
 
-/* for the two inputs on screen */
+.confirmation-input{
+    position: absolute;
+    margin-top: 256.8px;
+    margin-left:  31px;
+}
+
+/* for the three inputs on screen */
 input[type=text],input[type=password]{
     border: 1px solid #909090 !important;
     padding-left: 20px !important;
@@ -116,7 +133,7 @@ input:focus{
     background-color: #ffa801;
     position: absolute;
     margin-left: 31px;
-    margin-top: 230.2px;
+    margin-top: 326.2px;
     padding: 0 !important;
     border: "white" !important;
     border-width: 0px !important;
@@ -137,7 +154,7 @@ input:focus{
     position: absolute;
     width : 294px;
     margin-left: 31px;
-    margin-top: 304px;
+    margin-top: calc(324.2px + 64px);
     color: white !important;
     font-family: "SimplonBP-Light";
     font-size: 14px;
@@ -154,7 +171,7 @@ input:focus{
     font-size: 14px;
     position: absolute;
     margin-left: 31px;
-    margin-top: 325.2px;
+    margin-top: calc(344.2px + 66px);
     border : white solid 1px;
     border-color : white;
     border-width: 1px;
@@ -177,6 +194,27 @@ input:focus{
     font-family: "SimplonBP-Light";
     font-size: 11px;
     color : #909090;
+}
+
+/* change the captcha */
+.btn_change{
+    position: absolute;
+    margin-left: calc(30% - 62px);
+    margin-top: 287.5px;
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    font-family: "SimplonBP-Light";
+    font-size: 11px;
+    color : #909090;
+}
+
+/* the captcha image */
+.captcha{
+    position: absolute;
+    margin-left: calc(30% - 64px);
+    margin-top: 265px;
+    border: none;
 }
 
 /* disable button border on focus, hover and active */
@@ -246,7 +284,8 @@ and (min-width : 1024px) {
     }
     
     
-    .btn-register,.btn-start{
+    .btn-register,
+    .btn-start{
         width : 30% !important;
     }
     
@@ -275,12 +314,16 @@ and (max-width : 1024px) {
         margin-right: 31px;
     }
     
-    .btn-register,.btn-start{
+    .btn-register,
+    .btn-start{
         width : calc(100% - 70px);
     }
     
+    
+    .captcha,
+    .btn_change,
     .btn_forgot{
-        margin-left: calc(100% - 130px)
+        margin-left: calc(100% - 130px);
     }
     
 }
@@ -304,7 +347,33 @@ and (max-width : 480px) {
         width: 100%;
         margin: 0;
     }
-    
-    
+     
+}
+
+@media only screen and (max-width: 414px){
+    /* change placeholder for input */
+    ::-webkit-input-placeholder {
+        font-family: "SimplonBP-Light";
+        font-size: 12px;
+        color: #909090;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        font-family: "SimplonBP-Light";
+        font-size: 12px;
+        color: #909090; 
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+        font-family: "SimplonBP-Light";
+        font-size: 12px;
+        color: #909090;  
+    }
+
+    :-ms-input-placeholder {  
+        font-family: "SimplonBP-Regular";
+        font-size: 12px;
+        color: #909090;  
+    }
 }
 
